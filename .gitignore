@@ -1,0 +1,45 @@
+# ============================================================
+# ff_go .gitignore
+# ============================================================
+
+# ---- 本地数据（不入库：素材与日志）----
+/ff-logs/
+/Media_Folder/
+
+# ---- FFmpeg 可执行文件（自行下载，体积过大）----
+/libs/ffmpeg.exe
+/libs/ffprobe.exe
+/libs/ffplay.exe
+/libs/ffmpeg
+/libs/ffprobe
+/libs/ffplay
+!/libs/PUT ffmpeg.exe HERE!.TXT
+
+# ---- 处理过程中的中间产物 ----
+OUTPUT_TEMP_*
+__fftmp__*
+*.ff_tmp
+*_frames/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ---- 测试临时文件 ----
+tests/_tmp/
+_test_out.txt
+
+# ---- 编辑器与系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
